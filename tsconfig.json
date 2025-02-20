@@ -1,38 +1,33 @@
 {
-    "compilerOptions": {
-      "module": "CommonJS",
-      "target": "ES2022",
-      "moduleResolution": "node",
-      "declaration": false,
-      "noImplicitAny": false,
-      "removeComments": true,
-      "noLib": false,
-      "skipLibCheck": true,
-      "importHelpers": false,
-      "allowSyntheticDefaultImports": true,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "esModuleInterop": true,
-      "allowUnreachableCode": false,
-      "noImplicitReturns": true,
-      "noImplicitThis": true,
-      "noUnusedParameters": false,
-      "noUnusedLocals": false,
-      "strictPropertyInitialization": false,
-      "noFallthroughCasesInSwitch": true,
-      "sourceMap": true,
-      "noEmitHelpers": true,
-      "noUncheckedIndexedAccess": true,
-      "outDir": "./dist",
-      "baseUrl": ".",
-      "incremental": true,
-      "strictNullChecks": true,
-      "paths": {
-        "@/*": ["/."],
-        "@/src/*": ["src/*"]
-      }
-    },
-    "include": ["src/**/*", "**/*.ts"],
-    "exclude": ["node_modules"]
-  }
-  
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES6",
+    "moduleResolution": "node16",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+
+    "removeComments": true,
+    "skipLibCheck": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "noEmitHelpers": true,
+    "noUncheckedIndexedAccess": true,
+    "rootDir": "./src",
+    "strict": true,
+    "incremental": true,
+    "strictNullChecks": false,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
