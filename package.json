@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "exe": "ts-node-dev --respawn"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
